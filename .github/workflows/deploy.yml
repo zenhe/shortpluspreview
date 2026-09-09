@@ -1,0 +1,38 @@
+name: Deploy Short+ presentation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout Short+ source
+        uses: actions/checkout@v4
+        with:
+          repository: zenhe/shortplus
+          ref: main
+          path: shortplus-source
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: shortplus-source
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

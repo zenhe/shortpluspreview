@@ -1,5 +1,6 @@
 # Short+
 
+
 ## The Concept:
 
 Short+ is a concept prototype exploring short-form video as a discovery layer for deeper content.

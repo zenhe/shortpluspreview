@@ -2,8 +2,6 @@ name: Deploy Short+ presentation
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/30 * * * *'
 
 permissions:
   contents: read

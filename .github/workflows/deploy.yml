@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zenhe/shortplus
+          token: ${{ secrets.SHORTPLUS_READ_TOKEN }}
           ref: main
           path: shortplus-source
 

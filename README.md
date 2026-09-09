@@ -1,12 +1,13 @@
-#Short+
+# Short+
 
-##The Concept:
+## The Concept:
 
 Short+ is a concept prototype exploring short-form video as a discovery layer for deeper content.
 
 Instead of keeping users within an endless short-video feed, the experience is designed to guide users from short-form discovery into longer, deeper content — including full videos, stories, episodes, and related topics.
 
-##Key Features:
+
+## Key Features:
 
 - Short+ / Long+ — Switch between short-form discovery and deeper content.
 - Swipe to Learn More — Move naturally from a short video into related content.
